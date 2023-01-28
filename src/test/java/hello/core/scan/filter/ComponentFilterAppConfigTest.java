@@ -16,7 +16,8 @@ public class ComponentFilterAppConfigTest {
 
 
         org.assertj.core.api.Assertions.assertThat(beanA).isNotNull();
-//        Assertions.assertThrows(NoSuchBeanDefinitionException.class, ()-> ac.getBean("beanB",BeanB.class));
+        
+        Assertions.assertThrows(NoSuchBeanDefinitionException.class, ()-> ac.getBean("beanB",BeanB.class));
 
     }
 
